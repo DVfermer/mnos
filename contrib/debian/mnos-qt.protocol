@@ -1,0 +1,11 @@
+[Protocol]
+exec=mnos-qt '%u'
+protocol=mnos
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -1,0 +1,22 @@
+[Unit]
+Description=MNOS's distributed currency daemon
+After=network.target
+
+[Service]
+User=mnos
+Group=mnos
+
+Type=forking
+PIDFile=/var/lib/mnosd/mnosd.pid
+ExecStart=/usr/bin/mnosd -daemon -pid=/var/lib/mnosd/mnosd.pid \
+-conf=/etc/mnos/mnos.conf -datadir=/var/lib/mnosd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

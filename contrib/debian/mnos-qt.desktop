@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MNOS
+Comment=MNOS P2P Cryptocurrency
+Comment[fr]=MNOS, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MNOS, eşten eşe kriptografik sanal para birimi
+Exec=mnos-qt %u
+Terminal=false
+Type=Application
+Icon=mnos128
+MimeType=x-scheme-handler/mnos;
+Categories=Office;Finance;
